@@ -1,0 +1,31 @@
+appName: myhelmapp
+
+configmap:
+  name: myhelmapp-configmap-v1
+  data:
+    CUSTOM_HEADER: 'Welcome to NGINX on ROSA! By Tamilarasan'
+
+image:
+  name: tamil95/argocdrosa
+  tag: latest
+
+secret:
+  name: nginx-secret
+  appKey: MySecretKey123
+
+serviceAccount:
+  name: nginx-sa
+
+role:
+  name: nginx-role
+
+roleBinding:
+  name: nginx-rolebinding
+
+pv:
+  name: nginx-pv
+  path: /mnt
+
+pvc:
+  name: nginx-pvc
+  storage: 5Gi
