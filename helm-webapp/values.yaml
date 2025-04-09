@@ -3,10 +3,10 @@ appName: myhelmapp
 configmap:
   name: myhelmapp-configmap-v1
   data:
-    CUSTOM_HEADER: 'Welcome to NGINX on ROSA! By Tamilarasan'
+    CUSTOM_HEADER: 'Welcome to NGINX on ROSA! By karthick'
 
 image:
-  name: tamil95/argocdrosa
+  name: karthick2509/rosaargocd
   tag: latest
 
 secret:
